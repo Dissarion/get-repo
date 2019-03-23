@@ -1,3 +1,7 @@
+body {
+  background: #e9e8e8;
+}
+
 .App {
   width: 800px;
   margin: 0 auto;
@@ -20,5 +24,32 @@
 }
 
 .footer_author:hover {
-  color: red;
+  color: #cc0000;
+}
+
+.main_list {
+  padding: 0;
+  border: 1px solid #000000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.main_list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 10px;
+  border: 1px solid #000000;
+}
+
+.main_list__item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.main_list__item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
